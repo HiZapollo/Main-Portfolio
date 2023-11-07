@@ -1,0 +1,21 @@
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.active .burger1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second burger */
+.active .burger2 {
+    opacity: 0;
+}
+
+/* Rotate last burger */
+.active .burger3 {
+    transform: translate(0, -11px) rotate(45deg);
+}

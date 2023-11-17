@@ -16,16 +16,23 @@ const Nav = () => {
 
     return (
         <>
-            <header>
-                <h1>Navigation</h1>
-                <button className={`burgerstack ${hamburgerActive}`} onClick={handleHamburger}>
+            <header className='border flex justify-between items-center'>
+                <h1 className='m-2'>
+                    Zeckenrode
+                </h1>
+                <button className={`m-2 md:hidden burgerstack ${hamburgerActive}`} onClick={handleHamburger}>
                     <div className="burger burger1"></div>
                     <div className="burger burger2"></div>
                     <div className="burger burger3"></div>
                 </button>
-                <div>
-                    <div></div>
-                    <div></div>
+                <div className={`navbar hidden md:block ${hamburgerActive}`}>
+                    <ul className='navlist'>
+                        <li>home</li>
+                        <li>skills</li>
+                        <li>projects</li>
+                        <li>experience</li>
+                        <li>contact</li>
+                    </ul>
                 </div>
             </header>
         </>

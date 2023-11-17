@@ -19,3 +19,9 @@
 .active .burger3 {
     transform: translate(0, -11px) rotate(45deg);
 }
+
+.navlist li {
+    float: left;
+    margin: 4px;
+    text-decoration: underline;
+}

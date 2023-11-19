@@ -6,22 +6,29 @@
     transition: 0.4s;
 }
 
-.active .burger1 {
+.side-menu:checked ~ .burgerstack .burger1 {
     transform: translate(0, 11px) rotate(-45deg);
 }
 
 /* Fade out the second burger */
-.active .burger2 {
+.side-menu:checked ~ .burgerstack .burger2 {
     opacity: 0;
 }
 
 /* Rotate last burger */
-.active .burger3 {
+.side-menu:checked ~ .burgerstack .burger3 {
     transform: translate(0, -11px) rotate(45deg);
 }
 
 .navlist li {
-    float: left;
     margin: 4px;
-    text-decoration: underline;
+}
+
+.navlist li:hover {
+    color: rgb(152, 79, 194)
+}
+
+.side-menu:checked ~ .navbar {
+    display: block;
+    max-height: 100%;
 }
